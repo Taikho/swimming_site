@@ -18,7 +18,6 @@ if (file_exists($strona)) {
     echo "The file $strona does not exist";
 }
 
-
 ?>
 
 
