@@ -6,7 +6,6 @@
 
 if($_GET['idp'] == 'glowna') $strona = 'html/glowna.html';
 if($_GET['idp'] == 'michael') $strona = 'html/michael.html';
-if($_GET['idp'] == 'michael') $strona = 'html/michael.html';
 if($_GET['idp'] == 'training_examples') $strona = 'html/training_examples.html';
 if($_GET['idp'] == 'Training_Films') $strona = 'html/Training_Films.html';
 if($_GET['idp'] == 'contact') $strona = 'html/contact.html';
@@ -17,6 +16,9 @@ if (file_exists($strona)) {
 } else {
     echo "The file $strona does not exist";
 }
+include('cfg.php');
+
+var_dump ($pass, $login);
 
 ?>
 
